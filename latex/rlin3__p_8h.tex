@@ -1,0 +1,169 @@
+\hypertarget{rlin3__p_8h}{}\section{peripherals/rlin3/rlin3\+\_\+p.h File Reference}
+\label{rlin3__p_8h}\index{peripherals/rlin3/rlin3\+\_\+p.\+h@{peripherals/rlin3/rlin3\+\_\+p.\+h}}
+{\ttfamily \#include $<$ree\+\_\+types.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_ae8e104055b5c15f627da28ca94cd240f}{R\+L\+I\+N3\+\_\+\+Port\+Enable}} (u08 Unit\+Number\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a99dfd5cd299e0009d07e445920de9684}{R\+L\+I\+N3\+\_\+\+Port\+Disable}} (u08 Unit\+Number\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a16beb94f9bbf59c1c4ee105ca3cb4da8}{R\+L\+I\+N3\+\_\+\+Reset}} (u08 Unit\+Number\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_ac67a2d631e72389e274518df2919fb83}{R\+L\+I\+N3\+\_\+\+U\+A\+R\+T\+Mode\+Config}} (u08 Unit\+Number\+\_\+u08, flt Oscillator\+\_\+\+Frequency\+\_\+flt, u32 Baudrate\+\_\+u32, u08 Samples\+Per\+Bit\+\_\+u08, u08 Parity\+\_\+u08, u08 Char\+Len\+\_\+u08, u08 Stop\+Bits\+\_\+u08, u08 Direction\+\_\+u08, u08 Filter\+Mode\+\_\+u08, u08 Interrupt\+Mode\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_acaa8f48668f542784f650770888a1ef4}{R\+L\+I\+N3\+\_\+\+Legacy\+Config}} (u08 Unit\+Number\+\_\+u08, flt Oscillator\+\_\+\+Frequency\+\_\+flt, u32 Baudrate\+\_\+u32, u08 Parity\+\_\+u08, u08 Char\+Len\+\_\+u08, u08 Stop\+Bits\+\_\+u08, u08 Direction\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a6fd72df020490790abadf6d30f8687c4}{R\+L\+I\+N3\+\_\+\+Get\+U\+A\+R\+T\+Status}} (u08 Unit\+Number\+\_\+u08, pu08 Bit\+Error\+\_\+pu08, pu08 Parity\+Error\+\_\+pu08, pu08 Frame\+Error\+\_\+pu08, pu08 Overrun\+Error\+\_\+pu08, pu08 Send\+Flag\+\_\+pu08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a9e0ca5845163530efbbd6b341c51b485}{R\+L\+I\+N3\+\_\+\+Send\+Byte}} (u08 Unit\+Number\+\_\+u08, u08 Send\+Byte\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a6afd7e8149dd63a2e35f3c0855b5f6dd}{R\+L\+I\+N3\+\_\+\+Receive\+Byte}} (u08 Unit\+Number\+\_\+u08, pu08 Receive\+Byte\+\_\+pu08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a1dec3265484904226f8446fd7cf17b38}{R\+L\+I\+N3\+\_\+\+Create\+Interrupt}} (u08 Unit\+Number\+\_\+u08, u08 Interrupt\+Source\+\_\+u08, u08 Interrupt\+Level\+\_\+u08, void($\ast$Function\+Vector)())
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a33397c5f9cb445887733bcc9dbe13fa7}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Set\+Config}} (u08 Unit\+Number\+\_\+u08, flt Oscillator\+\_\+\+Frequency\+\_\+flt, u08 Operation\+Mode\+\_\+u08, u08 L\+I\+N\+Standard\+\_\+u08, u32 Baudrate\+\_\+u32, u08 Samples\+Per\+Bit\+\_\+u08, u08 Clock\+Selection\+\_\+u08, u08 Break\+Detection\+Length\+\_\+u08, u08 Break\+Length\+\_\+u08, u08 Break\+Delimiter\+\_\+u08, u08 Header\+Space\+\_\+u08, u08 Inter\+Byte\+Space\+\_\+u08, u08 Filter\+Mode\+\_\+u08, u08 Interrupt\+Mode\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_adb3bad337743f7b31abb873bd95abebb}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Message}} (u08 Unit\+Number\+\_\+u08, u08 P\+I\+D\+\_\+u08, u08 Message\+Length\+\_\+u08, u08 Enhanced\+Check\+Sum\+\_\+u08, u08 Direction\+\_\+u08, pu08 Data\+\_\+pu08, pu08 Operation\+Mode\+\_\+pu08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_aebda1b627922e5a1ce0b635e0224ed15}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Enable\+Interrupt}} (u08 Unit\+Number\+\_\+u08, u08 Transmit\+\_\+u08, u08 Receive\+\_\+u08, u08 Error\+Global\+\_\+u08, u08 Error\+Bit\+\_\+u08, u08 Error\+Phy\+Bus\+\_\+u08, u08 Error\+Timeout\+\_\+u08, u08 Error\+Frame\+\_\+u08, u08 Error\+Sync\+\_\+u08, u08 Error\+I\+D\+Par\+\_\+u08, u08 Timeout\+Sel\+\_\+u08, u08 Header\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a361e3a9567669e263755eb9a1817391c}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Header}} (u08 Unit\+Number\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a3cdfb590f7b8830f7906607db4f8d51f}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Status}} (u08 Unit\+Number\+\_\+u08, pu08 Header\+Received\+\_\+pu08, pu08 Data\+Received\+\_\+pu08, pu08 Data\+Transmitted\+\_\+pu08, pu08 P\+I\+D\+\_\+pu08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a5872f486f129d80839ebf66b7b101e93}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Error}} (u08 Unit\+Number\+\_\+u08, pu08 Any\+Error\+\_\+pu08, pu08 Bit\+Error\+\_\+pu08, pu08 Data\+Consistency\+Error\+\_\+pu08, pu08 Timeout\+Error\+\_\+pu08, pu08 Frame\+Error\+\_\+pu08, pu08 Sync\+Field\+Error\+\_\+pu08, pu08 Check\+Sum\+Error\+\_\+pu08, pu08 Ident\+Parity\+Error\+\_\+pu08, pu08 Response\+Preparation\+Error\+\_\+pu08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a6b3f39909eb1be1b60beaa099d49c601}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Action}} (u08 Unit\+Number\+\_\+u08, u08 Action\+Type\+\_\+u08, u08 Message\+Length\+\_\+u08, u08 Enhanced\+Check\+Sum\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_afb722dd6a1efa6b50a9f27bf1dc6c008}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Message}} (u08 Unit\+Number\+\_\+u08, u08 Message\+Length\+\_\+u08, pu08 Data\+\_\+pu08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_acc9b3a5f30e27651156aeeea5fa9b847}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Wakeup}} (u08 Unit\+Number\+\_\+u08, u08 Wakeup\+Length\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a0459585a6c795f9970ba65a5b9431f05}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Wakeup}} (u08 Unit\+Number\+\_\+u08)
+\item 
+bit \mbox{\hyperlink{rlin3__p_8h_a2055a3bea9cc58948946b24d8e69061a}{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Restart}} (u08 Unit\+Number\+\_\+u08)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{rlin3__p_8h_a1dec3265484904226f8446fd7cf17b38}\label{rlin3__p_8h_a1dec3265484904226f8446fd7cf17b38}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+Create\+Interrupt@{R\+L\+I\+N3\+\_\+\+Create\+Interrupt}}
+\index{R\+L\+I\+N3\+\_\+\+Create\+Interrupt@{R\+L\+I\+N3\+\_\+\+Create\+Interrupt}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+Create\+Interrupt()}{RLIN3\_CreateInterrupt()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+Create\+Interrupt (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{u08}]{Interrupt\+Source\+\_\+u08,  }\item[{u08}]{Interrupt\+Level\+\_\+u08,  }\item[{void($\ast$)()}]{Function\+Vector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a6fd72df020490790abadf6d30f8687c4}\label{rlin3__p_8h_a6fd72df020490790abadf6d30f8687c4}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+Get\+U\+A\+R\+T\+Status@{R\+L\+I\+N3\+\_\+\+Get\+U\+A\+R\+T\+Status}}
+\index{R\+L\+I\+N3\+\_\+\+Get\+U\+A\+R\+T\+Status@{R\+L\+I\+N3\+\_\+\+Get\+U\+A\+R\+T\+Status}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+Get\+U\+A\+R\+T\+Status()}{RLIN3\_GetUARTStatus()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+Get\+U\+A\+R\+T\+Status (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{pu08}]{Bit\+Error\+\_\+pu08,  }\item[{pu08}]{Parity\+Error\+\_\+pu08,  }\item[{pu08}]{Frame\+Error\+\_\+pu08,  }\item[{pu08}]{Overrun\+Error\+\_\+pu08,  }\item[{pu08}]{Send\+Flag\+\_\+pu08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_acaa8f48668f542784f650770888a1ef4}\label{rlin3__p_8h_acaa8f48668f542784f650770888a1ef4}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+Legacy\+Config@{R\+L\+I\+N3\+\_\+\+Legacy\+Config}}
+\index{R\+L\+I\+N3\+\_\+\+Legacy\+Config@{R\+L\+I\+N3\+\_\+\+Legacy\+Config}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+Legacy\+Config()}{RLIN3\_LegacyConfig()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+Legacy\+Config (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{flt}]{Oscillator\+\_\+\+Frequency\+\_\+flt,  }\item[{u32}]{Baudrate\+\_\+u32,  }\item[{u08}]{Parity\+\_\+u08,  }\item[{u08}]{Char\+Len\+\_\+u08,  }\item[{u08}]{Stop\+Bits\+\_\+u08,  }\item[{u08}]{Direction\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_aebda1b627922e5a1ce0b635e0224ed15}\label{rlin3__p_8h_aebda1b627922e5a1ce0b635e0224ed15}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Enable\+Interrupt@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Enable\+Interrupt}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Enable\+Interrupt@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Enable\+Interrupt}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Enable\+Interrupt()}{RLIN3\_LINEnableInterrupt()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Enable\+Interrupt (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{u08}]{Transmit\+\_\+u08,  }\item[{u08}]{Receive\+\_\+u08,  }\item[{u08}]{Error\+Global\+\_\+u08,  }\item[{u08}]{Error\+Bit\+\_\+u08,  }\item[{u08}]{Error\+Phy\+Bus\+\_\+u08,  }\item[{u08}]{Error\+Timeout\+\_\+u08,  }\item[{u08}]{Error\+Frame\+\_\+u08,  }\item[{u08}]{Error\+Sync\+\_\+u08,  }\item[{u08}]{Error\+I\+D\+Par\+\_\+u08,  }\item[{u08}]{Timeout\+Sel\+\_\+u08,  }\item[{u08}]{Header\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a5872f486f129d80839ebf66b7b101e93}\label{rlin3__p_8h_a5872f486f129d80839ebf66b7b101e93}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Error@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Error}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Error@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Error}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Error()}{RLIN3\_LINGetError()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Error (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{pu08}]{Any\+Error\+\_\+pu08,  }\item[{pu08}]{Bit\+Error\+\_\+pu08,  }\item[{pu08}]{Data\+Consistency\+Error\+\_\+pu08,  }\item[{pu08}]{Timeout\+Error\+\_\+pu08,  }\item[{pu08}]{Frame\+Error\+\_\+pu08,  }\item[{pu08}]{Sync\+Field\+Error\+\_\+pu08,  }\item[{pu08}]{Check\+Sum\+Error\+\_\+pu08,  }\item[{pu08}]{Ident\+Parity\+Error\+\_\+pu08,  }\item[{pu08}]{Response\+Preparation\+Error\+\_\+pu08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a3cdfb590f7b8830f7906607db4f8d51f}\label{rlin3__p_8h_a3cdfb590f7b8830f7906607db4f8d51f}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Status@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Status}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Status@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Status}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Status()}{RLIN3\_LINGetStatus()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Get\+Status (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{pu08}]{Header\+Received\+\_\+pu08,  }\item[{pu08}]{Data\+Received\+\_\+pu08,  }\item[{pu08}]{Data\+Transmitted\+\_\+pu08,  }\item[{pu08}]{P\+I\+D\+\_\+pu08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_afb722dd6a1efa6b50a9f27bf1dc6c008}\label{rlin3__p_8h_afb722dd6a1efa6b50a9f27bf1dc6c008}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Message@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Message}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Message@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Message}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Message()}{RLIN3\_LINReceiveMessage()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Message (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{u08}]{Message\+Length\+\_\+u08,  }\item[{pu08}]{Data\+\_\+pu08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a0459585a6c795f9970ba65a5b9431f05}\label{rlin3__p_8h_a0459585a6c795f9970ba65a5b9431f05}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Wakeup@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Wakeup}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Wakeup@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Wakeup}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Wakeup()}{RLIN3\_LINReceiveWakeup()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Receive\+Wakeup (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a2055a3bea9cc58948946b24d8e69061a}\label{rlin3__p_8h_a2055a3bea9cc58948946b24d8e69061a}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Restart@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Restart}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Restart@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Restart}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Restart()}{RLIN3\_LINRestart()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Restart (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_adb3bad337743f7b31abb873bd95abebb}\label{rlin3__p_8h_adb3bad337743f7b31abb873bd95abebb}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Message@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Message}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Message@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Message}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Message()}{RLIN3\_LINSendMessage()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Message (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{u08}]{P\+I\+D\+\_\+u08,  }\item[{u08}]{Message\+Length\+\_\+u08,  }\item[{u08}]{Enhanced\+Check\+Sum\+\_\+u08,  }\item[{u08}]{Direction\+\_\+u08,  }\item[{pu08}]{Data\+\_\+pu08,  }\item[{pu08}]{Operation\+Mode\+\_\+pu08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_acc9b3a5f30e27651156aeeea5fa9b847}\label{rlin3__p_8h_acc9b3a5f30e27651156aeeea5fa9b847}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Wakeup@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Wakeup}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Wakeup@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Wakeup}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Wakeup()}{RLIN3\_LINSendWakeup()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Send\+Wakeup (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{u08}]{Wakeup\+Length\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a33397c5f9cb445887733bcc9dbe13fa7}\label{rlin3__p_8h_a33397c5f9cb445887733bcc9dbe13fa7}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+Set\+Config@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Set\+Config}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Set\+Config@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Set\+Config}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+Set\+Config()}{RLIN3\_LINSetConfig()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+Set\+Config (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{flt}]{Oscillator\+\_\+\+Frequency\+\_\+flt,  }\item[{u08}]{Operation\+Mode\+\_\+u08,  }\item[{u08}]{L\+I\+N\+Standard\+\_\+u08,  }\item[{u32}]{Baudrate\+\_\+u32,  }\item[{u08}]{Samples\+Per\+Bit\+\_\+u08,  }\item[{u08}]{Clock\+Selection\+\_\+u08,  }\item[{u08}]{Break\+Detection\+Length\+\_\+u08,  }\item[{u08}]{Break\+Length\+\_\+u08,  }\item[{u08}]{Break\+Delimiter\+\_\+u08,  }\item[{u08}]{Header\+Space\+\_\+u08,  }\item[{u08}]{Inter\+Byte\+Space\+\_\+u08,  }\item[{u08}]{Filter\+Mode\+\_\+u08,  }\item[{u08}]{Interrupt\+Mode\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a6b3f39909eb1be1b60beaa099d49c601}\label{rlin3__p_8h_a6b3f39909eb1be1b60beaa099d49c601}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Action@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Action}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Action@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Action}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Action()}{RLIN3\_LINSReceiveAction()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Action (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{u08}]{Action\+Type\+\_\+u08,  }\item[{u08}]{Message\+Length\+\_\+u08,  }\item[{u08}]{Enhanced\+Check\+Sum\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a361e3a9567669e263755eb9a1817391c}\label{rlin3__p_8h_a361e3a9567669e263755eb9a1817391c}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Header@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Header}}
+\index{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Header@{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Header}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Header()}{RLIN3\_LINSReceiveHeader()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+L\+I\+N\+S\+Receive\+Header (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a99dfd5cd299e0009d07e445920de9684}\label{rlin3__p_8h_a99dfd5cd299e0009d07e445920de9684}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+Port\+Disable@{R\+L\+I\+N3\+\_\+\+Port\+Disable}}
+\index{R\+L\+I\+N3\+\_\+\+Port\+Disable@{R\+L\+I\+N3\+\_\+\+Port\+Disable}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+Port\+Disable()}{RLIN3\_PortDisable()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+Port\+Disable (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_ae8e104055b5c15f627da28ca94cd240f}\label{rlin3__p_8h_ae8e104055b5c15f627da28ca94cd240f}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+Port\+Enable@{R\+L\+I\+N3\+\_\+\+Port\+Enable}}
+\index{R\+L\+I\+N3\+\_\+\+Port\+Enable@{R\+L\+I\+N3\+\_\+\+Port\+Enable}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+Port\+Enable()}{RLIN3\_PortEnable()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+Port\+Enable (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a6afd7e8149dd63a2e35f3c0855b5f6dd}\label{rlin3__p_8h_a6afd7e8149dd63a2e35f3c0855b5f6dd}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+Receive\+Byte@{R\+L\+I\+N3\+\_\+\+Receive\+Byte}}
+\index{R\+L\+I\+N3\+\_\+\+Receive\+Byte@{R\+L\+I\+N3\+\_\+\+Receive\+Byte}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+Receive\+Byte()}{RLIN3\_ReceiveByte()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+Receive\+Byte (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{pu08}]{Receive\+Byte\+\_\+pu08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a16beb94f9bbf59c1c4ee105ca3cb4da8}\label{rlin3__p_8h_a16beb94f9bbf59c1c4ee105ca3cb4da8}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+Reset@{R\+L\+I\+N3\+\_\+\+Reset}}
+\index{R\+L\+I\+N3\+\_\+\+Reset@{R\+L\+I\+N3\+\_\+\+Reset}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+Reset()}{RLIN3\_Reset()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_a9e0ca5845163530efbbd6b341c51b485}\label{rlin3__p_8h_a9e0ca5845163530efbbd6b341c51b485}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+Send\+Byte@{R\+L\+I\+N3\+\_\+\+Send\+Byte}}
+\index{R\+L\+I\+N3\+\_\+\+Send\+Byte@{R\+L\+I\+N3\+\_\+\+Send\+Byte}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+Send\+Byte()}{RLIN3\_SendByte()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+Send\+Byte (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{u08}]{Send\+Byte\+\_\+u08 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rlin3__p_8h_ac67a2d631e72389e274518df2919fb83}\label{rlin3__p_8h_ac67a2d631e72389e274518df2919fb83}} 
+\index{rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}!R\+L\+I\+N3\+\_\+\+U\+A\+R\+T\+Mode\+Config@{R\+L\+I\+N3\+\_\+\+U\+A\+R\+T\+Mode\+Config}}
+\index{R\+L\+I\+N3\+\_\+\+U\+A\+R\+T\+Mode\+Config@{R\+L\+I\+N3\+\_\+\+U\+A\+R\+T\+Mode\+Config}!rlin3\+\_\+p.\+h@{rlin3\+\_\+p.\+h}}
+\subsubsection{\texorpdfstring{R\+L\+I\+N3\+\_\+\+U\+A\+R\+T\+Mode\+Config()}{RLIN3\_UARTModeConfig()}}
+{\footnotesize\ttfamily bit R\+L\+I\+N3\+\_\+\+U\+A\+R\+T\+Mode\+Config (\begin{DoxyParamCaption}\item[{u08}]{Unit\+Number\+\_\+u08,  }\item[{flt}]{Oscillator\+\_\+\+Frequency\+\_\+flt,  }\item[{u32}]{Baudrate\+\_\+u32,  }\item[{u08}]{Samples\+Per\+Bit\+\_\+u08,  }\item[{u08}]{Parity\+\_\+u08,  }\item[{u08}]{Char\+Len\+\_\+u08,  }\item[{u08}]{Stop\+Bits\+\_\+u08,  }\item[{u08}]{Direction\+\_\+u08,  }\item[{u08}]{Filter\+Mode\+\_\+u08,  }\item[{u08}]{Interrupt\+Mode\+\_\+u08 }\end{DoxyParamCaption})}
+
